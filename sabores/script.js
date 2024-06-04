@@ -1,1 +1,3 @@
-console.log(localStorage.getItem("pizza_escolhida").tamanho);
+var pizza_localStorage = localStorage.getItem("pizza_escolhida");
+const pizza = JSON.parse(pizza_localStorage);
+

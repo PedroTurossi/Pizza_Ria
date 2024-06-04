@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  /* palheta de cor escolhida pelo cliente */
+  --branco: #eee;
+  --branco2: #cdcdcd;
+  --preto: #03071e;
+  --laranja1: #dc2f02;
+  --vinho: #370617;
+  --bordo: #6a040f;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--preto);
+  background: var(--branco);
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 3%;
+  background: var(--laranja1);
+  color: var(--branco);
+}

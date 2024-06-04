@@ -55,6 +55,11 @@ function criarPizza(pizza) {
     divDetalhes.appendChild(pSabores);
 
     divPizza.appendChild(divDetalhes);
+
+    divPizza.onclick = function() {
+        localStorage.setItem('pizza_escolhida', JSON.stringify(pizza));
+        window.location.href = "/sabores/sabores.html";
+    }
     return divPizza;
 }
 
@@ -73,12 +78,3 @@ function carregarPizzas() {
 }
 
 carregarPizzas();
-
-function ir_para_sabores(){
-    localStorage.setItem("pizza_escolhida", pizzas[0])
-    window.location.href = "/sabores/sabores.html";
-}
-
-document.querySelector(".promocao").addEventListener("click", ir_para_sabores);
-
-document.querySelector("promocao").onclick = ir_para_sabores;
