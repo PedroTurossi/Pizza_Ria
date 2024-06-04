@@ -1,0 +1,1 @@
+console.log(localStorage.getItem("pizza_escolhida").tamanho);
