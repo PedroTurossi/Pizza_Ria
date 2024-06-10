@@ -41,6 +41,7 @@ header {
   align-items: end;
   padding: 3%;
   color: var(--branco);
+  margin-bottom: 10%;
 }
 .imagem_inicial > div {
   display: flex;
@@ -65,7 +66,7 @@ header {
   justify-content: center;
   gap: 3%;
   flex-direction: column;
-  padding: 8%;
+  margin-bottom: 10%;
 }
 
 .opcoes_tamanhos {
@@ -177,4 +178,7 @@ header {
     justify-content: space-between;
     flex-direction: row;
     gap: 20px;
+}
+a {
+  color: var(--branco);
 }

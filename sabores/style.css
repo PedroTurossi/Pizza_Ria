@@ -94,3 +94,7 @@ main {
   flex-direction: column;
   height: 100%;
 }
+a {
+  color: var(--branco);
+  text-decoration: none;
+}
