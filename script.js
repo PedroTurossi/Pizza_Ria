@@ -2,7 +2,7 @@ const todos_sabores = ['Portuguesa', 'Calabresa', 'Costela Barbecue', 'Frango e 
 
 const pizzas = [
     {
-        tamanho: 'Médio',
+        tamanho: 'Promoção média',
         img_src: 'img/receitas-com-calabresa-1.png',
         valor: 'R$49,99',
         desconto: true,
@@ -58,7 +58,7 @@ function criarPizza(pizza) {
 
     divPizza.onclick = function() {
         localStorage.setItem('pizza_escolhida', JSON.stringify(pizza));
-        window.location.href = "/sabores/sabores.html";
+        window.location.href = "./sabores/sabores.html";
     }
     return divPizza;
 }

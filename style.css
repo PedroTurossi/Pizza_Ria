@@ -99,6 +99,19 @@ header {
   flex-direction: column;
   padding-bottom: 25px;
 }
+.promocao:hover {
+  animation: escala 1s ease-in-out both;
+}
+.promocao > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.promocao > div {
+  width: 70%;
+  font-size: 10px;
+}
 
 .tamanho {
   width: 350px;
@@ -109,6 +122,18 @@ header {
   justify-content: space-between;
   flex-direction: row;
   padding-right: 10px;
+  cursor: pointer;
+}
+.tamanho:hover {
+  animation: escala 1s ease-in-out both;
+}
+@keyframes escala {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
 }
 
 .pizza_img,
@@ -116,7 +141,8 @@ header {
   width: 100%;
 }
 .pizza_img_promo {
-  height: 300px;
+  height: 400px;
+  width: 100%;
   border-radius: 10px 10px 0 0;
 }
 .pizza_img {
